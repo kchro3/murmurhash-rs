@@ -1,7 +1,10 @@
+use wasm_bindgen::prelude::*;
+
 const C1: u32 = 0xcc9e2d51;
 const C2: u32 = 0x1b873593;
 
 /// Compute MurmurHash3 32-bit hash of `data` using `seed`.
+#[wasm_bindgen]
 pub fn murmurhash3_32(data: &[u8], seed: u32) -> u32 {
     let mut hash = seed;
     let nblocks = data.len() / 4;
