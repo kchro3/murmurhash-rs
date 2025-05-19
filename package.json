@@ -1,0 +1,14 @@
+{
+  "name": "murmurhash-rs",
+  "version": "0.1.0",
+  "description": "MurmurHash3 32-bit implementation compiled from Rust",
+  "files": ["murmurhash_rs.js", "murmurhash_rs_bg.wasm", "package.json"],
+  "main": "murmurhash_rs.js",
+  "types": "murmurhash_rs.d.ts",
+  "keywords": ["murmurhash", "wasm", "rust"],
+  "author": "OpenAI",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
