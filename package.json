@@ -1,0 +1,33 @@
+{
+  "name": "murmurhash-rs",
+  "version": "0.1.0",
+  "description": "MurmurHash3 32-bit implementation compiled from Rust",
+  "type": "module",
+  "files": [
+    "pkg",
+    "package.json"
+  ],
+  "main": "pkg/murmurhash_rs.js",
+  "types": "pkg/murmurhash_rs.d.ts",
+  "keywords": [
+    "murmurhash",
+    "wasm",
+    "rust"
+  ],
+  "author": "kchro3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/murmurhash-rs"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "wasm-pack build --target nodejs",
+    "start": "npm run build && npm run test"
+  },
+  "devDependencies": {
+    "imurmurhash": "^0.1.4",
+    "murmurhash": "^2.0.1",
+    "murmurhash-wasm": "^1.3.0"
+  }
+}
